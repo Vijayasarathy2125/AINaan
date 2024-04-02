@@ -23,7 +23,7 @@ df = pd.DataFrame(data)
 
 model = SentenceTransformer('average_word_embeddings_komninos')
 
-# Calculate cosine similarity pairwise between each source-plagiarized pair
+
 plagiarism_results = []
 for i in range(len(df)):
     source_encoding = model.encode([df['source'][i]])
